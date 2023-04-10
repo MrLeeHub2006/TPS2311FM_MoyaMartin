@@ -1,3 +1,6 @@
 #footer {
     background: #0b194d;
 }
+#footer a {
+    color: white;
+}
