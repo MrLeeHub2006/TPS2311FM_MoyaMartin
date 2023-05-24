@@ -41,17 +41,49 @@ tiene dos sublenguajes
 DDL data definition languaje nos ayuda a crear la estructura los simientos, relaciones y demas de la base de datos, de una base de datos ya real 
 comandos(create, alter alterar o modificar una de estas entidades, ejemplo agregando o quitando columnas, drop es soltar o dejar ir es la secuancia que nos va ayudar a borrar , se peude borrar toda la base de datos) una vista, una tabla y demas,
 1. Create
-    Database: CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
+    Database:
+    ---------------------------------------------------------------
+    CREATE SCHEMA `platziblog`  DEFAULT CHARACTER SET utf8 ;
+    
     CREATE DATABASE test_db;
 
-USE DATABASE test_db;
+    USE DATABASE test_db;
+-------------------------------------------------------------------
 
+    Create table
+
+    CREATE TABLE `platziblog`.`prueba`(
+`person_id`  INT NOT NULL AUTO_INCREMENT,
+`last_name` varchar (255) NULL,
+`first_name` varchar (255) NULL,
+`address` varchar (255) NULL,
+`city` varchar (255) NULL,
+PRIMARY KEY (`person_id`))
+
+
+
+    ---------------------------------------------------------------
+    INSERT INTO `platziblog`.`people` (`person_id`, `last_name`, `first_name`, `address`, `city`) 
+VALUES ('1', 'Vásquez', 'Israel', 'Calle Famosa Num 1', 'México'),
+        ('2', 'Hernández', 'Mónica', 'Reforma 222', 'México'),
+        ('3', 'Alanis', 'Edgar', 'Central 1', 'Monterrey');
+        --------------------------------------------------------------
+    database:
     table: proyeccion o traduccion a SQL 
     view:  significa que lo que se esta ofreciendo es la proyeccion, de cuando tenemops normalizada la informacion, de partes de la informacion y hacer algo coherente.
 
+    schema = base de datos 
+    entidad = tabla
+
 ### Playground: CREATE TABLE
 ### CREATE VIEW y DDL ALTER
+lo que hace es tomar la informacion de la base de datos, para consultar de manera recurrente, 
+ asignar nombre, Create.
+new para crear una lista 
+se pone la B para que no lo tome como una tabla
+    proyecta la informacion de la tabla en una lista, dar create view
 ### DDL drop
+
 ### Playground: VIEW, ALTER y DROP en SQL
 ### DML
 ### Playground: CRUD con SQL
