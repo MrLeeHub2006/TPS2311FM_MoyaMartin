@@ -5,7 +5,7 @@ Desarrollo de proyecto de grado para TPS2023
  2. navegador predeterminado 
  3. iniciar Sesion en visual
 
-# Curso de Fundamentos de Bases de Datos
+# [Curso de Fundamentos de Bases de Datos](https://platzi.com/cursos/bd/)
 
 ## Bienvenida conceptos básicos y contexto histórico de las Bases de Datos
 ### Bienvenida conceptos básicos y contexto histórico de las Bases de Datos
