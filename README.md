@@ -95,7 +95,24 @@ se pone la B para que no lo tome como una tabla
 ## Consultas a una base de datos
 
 ### ¿Por qué las consultas son tan importantes?
+puede salvar un negocio o una empresa ya qu enecesitan una gran necesidad corrercta exacta oportuna y demas.
+cuando se unen a travez de query's por infomes o encuestas.
 ### Estructura básica de un Query
+son la forma en como estructuramos preguntas y lo que un Query es como traducirlo para que la base de datos pueda entender para poder buscar
+----------------------------------
+ -Estructura basica
+ SELECT city, count(*) AS total
+ FROM people 
+ WHERE  active = true
+ GROUP BY city 
+ ORDER 
+ HAVING 
+----------------------------------
+
+
+Comandos 
+- DROP
+
 ### SELECT
 ### Playground: SELECT en SQL
 ### FROM y SQL JOINs
