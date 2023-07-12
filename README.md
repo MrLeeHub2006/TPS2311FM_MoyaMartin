@@ -83,6 +83,7 @@ new para crear una lista
 se pone la B para que no lo tome como una tabla
     proyecta la informacion de la tabla en una lista, dar create view
 ### DDL drop
+Data definition language
 
 ### Playground: VIEW, ALTER y DROP en SQL
 ### DML
@@ -98,20 +99,30 @@ se pone la B para que no lo tome como una tabla
 puede salvar un negocio o una empresa ya qu enecesitan una gran necesidad corrercta exacta oportuna y demas.
 cuando se unen a travez de query's por infomes o encuestas.
 ### Estructura básica de un Query
-son la forma en como estructuramos preguntas y lo que un Query es como traducirlo para que la base de datos pueda entender para poder buscar
+son la forma en como estructuramos preguntas y lo que un Query es como traducirlo para que la base de datos pueda entender para poder buscar es el pan de cada dia de las organizaciones que ayuda a tomar decisiones en las compañias
 ----------------------------------
  -Estructura basica
  SELECT city, count(*) AS total
  FROM people 
  WHERE  active = true
- GROUP BY city 
- ORDER 
- HAVING 
+ GROUP BY city agrupar por una cantidad de ciudades
+
+ ORDER BY total DESC
+ HAVING  total <=2;
 ----------------------------------
-
-
 Comandos 
 - DROP
+es la forma que estructuramos las preguntas que le haremos a la base de datos.
+   el query cuenta con dos partes1. select y otra from
+
+----------------------------------------
+   SELECT *
+FROM categoriass
+where fecha_publicacion > '2024-01-01';
+----------------------------------------------
+
+----------------------------------------------
+
 
 ### SELECT
 ### Playground: SELECT en SQL
