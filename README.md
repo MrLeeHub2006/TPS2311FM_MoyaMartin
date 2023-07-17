@@ -109,6 +109,7 @@ son la forma en como estructuramos preguntas y lo que un Query es como traducirl
 
  ORDER BY total DESC
  HAVING  total <=2;
+
 ----------------------------------
 Comandos 
 - DROP
@@ -122,11 +123,33 @@ where fecha_publicacion > '2024-01-01';
 ----------------------------------------------
 
 ----------------------------------------------
+clase pasada query's
 
 
 ### SELECT
+---------------------------------------
+SELECT titulo, fecha_publicacion, estatus
+FROM categoriass;  
+----------------------------------------
+ Se seleccionan los diferentes campos los que uno quiera y en el orden que yo quiera.
+-----------------------------------------
+SELECT titulo AS encabezado, fecha_publicacion AS publicado_en, estatus AS estado
+FROM categoriass;  
+-----------------------------------
+El AS se usa para mostrar o consultar con el nombre que uno quiere AS -> apodo
+
+
 ### Playground: SELECT en SQL
 ### FROM y SQL JOINs
+  indica de donde vamos a traer los datos, selecciona todo y traerlos.
+   La union de las tablas. la informacion esta dispersa en distintas tablas.
+   join juntar o unir y que nos ayuda a unir tablas a traves de las relaciones que nosotros hacemos como la llave primaria y la llave foranea de otra tabla
+diferencia: lo que tenemos en un lado pero no tenemos en el otro left join( todos los datos de la tabla A se envian a la tabla B esten o no esteno en esa tabla) y right join (traer todos los posts que tengamos y solo los qu eno tengan usuarios asociados)
+interseccion: union ( traer todo, no  importa los casos o posts y traera los posts si no tiene o no usuarios)o diferencia simétrica(solo los usuarios que no han hecho posts o los posts huerfanos y que no tengan dueño ni usuario.) 
+
+
+
+
 ### Utilizando la sentencia FROM
 ### Playground: FROM y LEFT JOIN en SQL
 ### WHERE
