@@ -11,6 +11,8 @@ CREATE TABLE `platziblog`.`categoriass`(
 `categoria_id` INT NULL,
 PRIMARY KEY (`id`));
 
+
+
 SELECT *
 FROM categoriass
 where fecha_publicacion > '2024-01-01';

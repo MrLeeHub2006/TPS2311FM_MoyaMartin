@@ -150,6 +150,8 @@ interseccion: union ( traer todo, no  importa los casos o posts y traera los pos
 
 
 
+
+
 ### Utilizando la sentencia FROM
 ### Playground: FROM y LEFT JOIN en SQL
 ### WHERE
