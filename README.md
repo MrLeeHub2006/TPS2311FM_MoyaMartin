@@ -153,6 +153,28 @@ interseccion: union ( traer todo, no  importa los casos o posts y traera los pos
 
 
 ### Utilizando la sentencia FROM
+---------------------------------------------------------------------
+SELECT *
+FROM  usuarios
+	LEFT JOIN categoriass ON usuarios.id = categoriass.usuario_id;
+---------------------------------------------------------------------
+  tengo todos lo susuarios sin importar que tengan y que no tengan posts
+----------------------------------------------------------------------------------------------
+  SELECT *
+FROM usuarios
+LEFT JOIN  categoriass ON usuarios.id = categoriass.usuario_id 
+WHERE categoriass.id IS NULL;
+-----------------------------------------------------------------------------------------------
+SELECT *
+FROM usuarios
+	RIGHT JOIN  categoriass ON usuarios.id = categoriass.usuario_id 
+WHERE categoriass.usuario_id IS NULL;
+
+SELECT *
+FROM usuarios
+	INNER JOIN  categoriass ON usuarios.id = categoriass.usuario_id 
+
+
 ### Playground: FROM y LEFT JOIN en SQL
 ### WHERE
 ### Utilizando la sentencia WHERE nulo y no nulo

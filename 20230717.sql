@@ -7,9 +7,6 @@ CREATE TABLE `colegio`.`cursos`(
 `n_calificaciones` INT NULL,
 PRIMARY KEY (`id`));
 
-
-
-
 INSERT INTO `colegio`.`cursos` (`id`,`nombre`,`profe`,`n_calificaciones`) VALUES (1,'Fundamentos de base de datos','Israel','580');
 INSERT INTO `colegio`.`cursos` (`id`,`nombre`,`profe`,`n_calificaciones`) VALUES ('2','MySQL y Maria DB','Carlos','180');
 INSERT INTO `colegio`.`cursos` (`id`,`nombre`,`profe`,`n_calificaciones`) VALUES ('3','PostgreSQL','Oswaldo','150');

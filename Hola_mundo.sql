@@ -54,3 +54,6 @@ FROM categoriass;
 
 SELECT COUNT(*) AS cantidad_registros
 FROM categoriass;  
+
+
+
