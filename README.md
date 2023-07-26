@@ -176,11 +176,173 @@ FROM usuarios
 ------------------------------------------------------------------------------------------
 
 ### Playground: FROM y LEFT JOIN en SQL
+
+
 ### WHERE
+
+Es la sentencia que nos ayuda a juntar y mostrar datos o duplas, ya sea una fecha, numero, texto
+Es el uso de la division o las limitaciones o filtros en una consulta
+   ### /*Filtros de diferentes formas*/
+    SELECT * 
+    FROM categoriass
+    WHERE id <50;
+    
+        SELECT * 
+    FROM categoriass
+    WHERE id >50;
+    
+            SELECT * 
+    FROM categoriass
+    WHERE id =50;
+
+        SELECT * 
+    FROM categoriass
+    WHERE estatus = 'activo';
+
+        SELECT * 
+    FROM categoriass
+    WHERE estatus = 'inactivo';
+    
+       SELECT * 
+	FROM categoriass
+    WHERE estatus != 'activo';
+    
+    /*Traer lo que le pido (LIKE)*/
+           SELECT * 
+    FROM categoriass
+    WHERE titulo LIKE '%escandalo%' ;
+
+    SELECT * 
+    FROM categoriass
+    WHERE titulo LIKE 'escandalo%' ;
+
+    SELECT * 
+    FROM categoriass
+    WHERE titulo LIKE '%roja' ;
+
+    SELECT * 
+    FROM categoriass
+    WHERE fecha_publicacion >'2025-01-01' ;
+    
+    SELECT * 
+    FROM categoriass
+    WHERE fecha_publicacion  BETWEEN '2023-01-01'AND '2025-12-31' ;
+    
+     
+    SELECT * 
+    FROM categoriass
+    WHERE id  BETWEEN '50'AND '60' ;
+     
+    SELECT * 
+    FROM categoriass
+    WHERE YEAR(fecha_publicacion) BETWEEN '2023' AND '2024';
+    
+    
+    SELECT * 
+    FROM categoriass
+    WHERE MONTH(fecha_publicacion) ='04';
+    /*Entre una fecha y otra*/
+    /*/Filtros*/
+    
+    
+
+
+
+
+Para que no sea igual a activo es !=(Que no sean el dato que le doy )
+
+%%(significa traeme la palabra que yo le pudo que traiga)
+
 ### Utilizando la sentencia WHERE nulo y no nulo
+
+  para consultar los valores nulos (Qie no tienen valores), si no que es un valor vacio, se busca con una snetencia particular. valores NOT NULL donde se usan los contraints 
+  /*Valores nulos*/
+    SELECT *
+    FROM categoriass
+    WHERE usuario_id IS NULL;
+
+    SELECT *
+    FROM categoriass
+    WHERE usuario_id IS NOT NULL;
+    
+        SELECT *
+    FROM categoriass
+    WHERE usuario_id IS NOT NULL
+    AND estatus ='activo' 
+    AND id <50
+    AND categoria_id =2 
+    AND YEAR (fecha_publicacion)= '2025';
+
+    /*/Valores nulos y no nulos*/
 ### Playground: Filtrando Datos con WHERE
 ### GROUP BY
+SELECT estatus, COUNT(*) categoriass_quantily
+FROM categoriass
+GROUP BY estatus;
+
+SELECT YEAR(fecha_publicacion) AS post_year, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY post_year;
+
+SELECT MONTHNAME(fecha_publicacion) AS post_month, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY post_month;
+
+SELECT estatus, MONTHNAME(fecha_publicacion) AS post_month, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY estatus, post_month;
+Agrupar varios datos de informacion en una misma tabla 
+
 ### ORDER BY y HAVING
+ SELECT  *
+ FROM categoriass
+ ORDER BY fecha_publicacion DESC;
+ 
+  SELECT  *
+ FROM categoriass
+ ORDER BY titulo ASC;
+ 
+   SELECT  *
+ FROM categoriass
+ ORDER BY titulo DESC;
+ 
+   SELECT  *
+ FROM categoriass
+ ORDER BY usuario_id ASC;
+ 
+   SELECT  *
+ FROM categoriass
+ ORDER BY usuario_id DESC;
+
+ SELECT  *
+ FROM categoriass
+ ORDER BY fecha_publicacion ASC;
+ 
+ SELECT  MONTHNAME(fecha_publicacion) AS post_month, estatus, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY estatus, post_month
+ORDER BY post_month;
+
+ SELECT  MONTHNAME(fecha_publicacion) AS post_month, estatus, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+WHERE categoriass_quantify >1 /*ERROR NO SE USA */
+GROUP BY estatus, post_month
+ORDER BY post_month;
+
+SELECT  MONTHNAME(fecha_publicacion) AS post_month, estatus, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY estatus, post_month
+HAVING categoriass_quantify >1
+ORDER BY post_month;
+
+SELECT  MONTHNAME(fecha_publicacion) AS post_month, estatus, COUNT(*) AS  categoriass_quantify 
+FROM categoriass
+GROUP BY estatus, post_month
+HAVING categoriass_quantify >2
+ORDER BY post_month;
+
+CONOCIMIENTO DEL ASC Y DESC ASENDIENTE Y DESCENDIENTE. DEPENDIENDO DEL USO QUE UNO QUIERA.
+
 ### Playground: Agrupamiento y Ordenamiento de Datos
 ### El interminable agujero de conejo (Nested queries)
 ### ¿Cómo convertir una pregunta en un query SQL?
