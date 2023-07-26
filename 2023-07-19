@@ -25,6 +25,8 @@ FROM  usuarios
 	LEFT JOIN categoriass ON usuarios.id = categoriass.usuario_id
     WHERE categoriass.usuario_id IS NULL
 UNION 
+
+
 SELECT *
 FROM usuarios
 	RIGHT JOIN  categoriass ON usuarios.id = categoriass.usuario_id 

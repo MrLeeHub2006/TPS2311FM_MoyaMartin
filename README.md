@@ -169,11 +169,11 @@ SELECT *
 FROM usuarios
 	RIGHT JOIN  categoriass ON usuarios.id = categoriass.usuario_id 
 WHERE categoriass.usuario_id IS NULL;
-
+-----------------------------------------------------------------------------------------------
 SELECT *
 FROM usuarios
 	INNER JOIN  categoriass ON usuarios.id = categoriass.usuario_id 
-
+------------------------------------------------------------------------------------------
 
 ### Playground: FROM y LEFT JOIN en SQL
 ### WHERE
