@@ -73,9 +73,9 @@ PRIMARY KEY (`id`));
 INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES (100,'Fundamentos de SQL y Base de datos','11');
 INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('200','Curso de MySQL y Maria DB','344');
 INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('260','Curso de Data Science','88');
-INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('350','Curso de Firebase','88');
-INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('749','Curso de Python','88');
-INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('750','Curso de React.js','88');
+INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('350','Curso de Firebase','0');
+INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('749','Curso de Python','300');
+INSERT INTO `colegio`.`cursos` (`id`,`name`,`n_reviews`) VALUES ('750','Curso de React.js','0');
 
 SELECT *
 FROM cursos
