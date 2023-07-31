@@ -280,6 +280,10 @@ SELECT estatus, COUNT(*) categoriass_quantily
 FROM categoriass
 GROUP BY estatus;
 
+SELECT estatus, SUM(id) suma_id
+FROM categoriass
+GROUP BY estatus;
+
 SELECT YEAR(fecha_publicacion) AS post_year, COUNT(*) AS  categoriass_quantify 
 FROM categoriass
 GROUP BY post_year;
@@ -292,6 +296,10 @@ SELECT estatus, MONTHNAME(fecha_publicacion) AS post_month, COUNT(*) AS  categor
 FROM categoriass
 GROUP BY estatus, post_month;
 Agrupar varios datos de informacion en una misma tabla 
+Decirle a la base de datos que quiero qu eme agrupe
+Cuando se le pone la coma, le estamos diciendo con que campos estamos trabajando. unos campos exactos
+Poder de la agrupación 
+
 
 ### ORDER BY y HAVING
  SELECT  *
