@@ -31,6 +31,18 @@ SELECT  teacher_id, COUNT(teacher_id) AS Cursos_profe
 FROM cursos
 GROUP BY teacher_id;
 
-SELECT  teacher_id, COUNT(teacher_id) AS Cursos_profe, SUM(n_reviews) total_reviews
+SELECT  teacher_id, COUNT(teacher_id) AS cursos_profe, SUM(n_reviews) total_reviews
 FROM cursos
 GROUP BY teacher_id;
+
+SELECT teacher;
+
+
+SELECT `names` AS teacher, SUM(n_reviews) total_reviews
+FROM  cursos, teacher
+GROUP BY `names`;
+
+SELECT  `names`,teacher_id, COUNT(teacher_id) AS cursos_profe, SUM(n_reviews) total_reviews
+FROM cursos, teacher
+GROUP BY teacher_id;
+
