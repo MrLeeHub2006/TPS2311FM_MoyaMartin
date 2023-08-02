@@ -28,10 +28,10 @@ SELECT *
 FROM teacher;
 
 SELECT teacher.name AS teacher_name,
-       courses.name AS course_name,
-       courses.n_reviews AS course_reviews
-FROM curses
-JOIN teacher ON curses.teacher_id = teacher.id
+       courses.name AS courses_name,
+       courses.n_reviews AS courses_reviews
+FROM courses
+JOIN teacher ON courses.teacher_id = teacher.id
 ORDER BY teacher.name ASC, courses.n_reviews DESC;
 
 SELECT teacher.id AS teacher_id,
@@ -53,7 +53,6 @@ FROM teacher
 LEFT JOIN courses ON teacher.id = courses.teacher_id
 GROUP BY teacher.name
 ORDER BY total_reviews DESC;
-
 
 
 
