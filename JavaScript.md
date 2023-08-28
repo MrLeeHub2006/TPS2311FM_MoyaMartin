@@ -206,6 +206,9 @@ console.log (['juanita','Rigoberto', 'Natilla'].lenght)
 function imprimirElementoPorElemento(arr){
     for (let i = 0; i < arr.lenght; i++) {
         Console.log(arr[i])
+         ejercicio <
+         const b = [1, 2,'Hola']
+
 ### 4ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier objeto como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
 
