@@ -141,17 +141,23 @@ switch (tipoDeSuscripcion) {
 
 ### 3ï¸âƒ£ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
-> ðŸ’¡ Bonus: si ya eres una experta o experto en el lenguaje, te desafÃ­o a comentar cÃ³mo replicar este comportamiento con arrays y un solo condicional. ðŸ˜
+ ¡ Bonus: si ya eres una experta o experto en el lenguaje, te desafÃ­o a comentar cÃ³mo replicar este comportamiento con arrays y un solo condicional.
 
 
 ## Ciclos
 
 ### 1ï¸âƒ£ Responde las siguientes preguntas en la secciÃ³n de comentarios:
 
-- Â¿QuÃ© es un ciclo?
-- Â¿QuÃ© tipos de ciclos existen en JavaScript?
-- Â¿QuÃ© es un ciclo infinito y por quÃ© es un problema?
-- Â¿Puedo mezclar ciclos y condicionales?
+- ¿Que es un ciclo?
+
+La forma de ejecutar un bloque de codigo hasta que se cumpla cierta condicion 
+
+- ¿Que tipos de ciclos existen en JavaScript?
+
+while, for, do while y for
+
+- ¿Que es un ciclo infinito y por quÃ© es un problema?
+- ¿Puedo mezclar ciclos y condicionales?
 
 ### 2ï¸âƒ£ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
@@ -167,22 +173,39 @@ for (let i = 10; i >= 2; i--) {
 
 ### 3ï¸âƒ£ Escribe un cÃ³digo en JavaScript que le pregunte a los usuarios cuÃ¡nto es `2 + 2`. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
-> ðŸ’¡ Pista: puedes usar la funciÃ³n prompt de JavaScript.
+>  Pista: puedes usar la funcion prompt de JavaScript.
 
 
 ## Listas
 
 ### 1ï¸âƒ£ Responde las siguientes preguntas en la secciÃ³n de comentarios:
 
-- Â¿QuÃ© es un array?
-- Â¿QuÃ© es un objeto?
-- Â¿CuÃ¡ndo es mejor usar objetos o arrays?
-- Â¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+- ¿Que es un array?
+
+es una lista de elementos 
+```
+const array= [1, 'jaja', true, false]
+
+- ¿Que es un objeto?
+es una lista de elementos pero cada elemento tiene un nombre clave.
+'''
+const obj = {
+    nombre: 'fulanito',
+    edad: 3,
+}
+```
+- ¿Cuando es mejor usar objetos o arrays?
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 ### 2ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier array como parÃ¡metro e imprima su primer elemento.
+function imprimirPrimerElementoArray(arr) {
+    console.log(arr[0])
 
 ### 3ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier array como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
-
+console.log (['juanita','Rigoberto', 'Natilla'].lenght)
+function imprimirElementoPorElemento(arr){
+    for (let i = 0; i < arr.lenght; i++) {
+        Console.log(arr[i])
 ### 4ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier objeto como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
 
