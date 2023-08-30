@@ -197,28 +197,68 @@ const obj = {
 - ¿Cuando es mejor usar objetos o arrays?
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
-### 2ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier array como parÃ¡metro e imprima su primer elemento.
+### 2. Crea una funcion que pueda recibir cualquier array como parÃ¡metro e imprima su primer elemento.
 function imprimirPrimerElementoArray(arr) {
     console.log(arr[0])
 
-### 3ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier array como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+### 3 Crea una funcion que pueda recibir cualquier array como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 console.log (['juanita','Rigoberto', 'Natilla'].lenght)
 function imprimirElementoPorElemento(arr){
     for (let i = 0; i < arr.lenght; i++) {
         Console.log(arr[i])
          ejercicio <
          const b = [1, 2,'Hola']
+------------------------------------------
 
-### 4ï¸âƒ£ Crea una funciÃ³n que pueda recibir cualquier objeto como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+const object = {
+    0: 'fulanito',
+    1: 3,
+    2: ['Pollo frito', 'Vegetales']
+} 
+----------------------------------------
+const estudiante = { nombre:'Fulanito', edad: 3, ComidasFavoritas:['Pollo Frito', 'Vegetales']}
+Object.values(estudiante)
+(3) ['Fulanito', 3, Array(2)]
+0
+: 
+"Fulanito"
+1
+: 
+3
+2
+: 
+(2) ['Pollo Frito', 'Vegetales']
+length
+: 
+3
+[[Prototype]]
+: 
+Array(0)
+----------------------------------
+function imprimirElementoPorElementoObjeto(estudiante) {
+    const arr = Object.values(estudiante);
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])}
+
+    imprimirElementoPorElementoObjeto(estudiante)
+    -------------------------
+    function conseguirTipoSuscripcion(suscripcion){
+    if (tiposDeSuscripciones[suscripcion]){
+        console.log(tiposDeSuscripciones [suscripcion]);
+        return;
+    }
+    console.warn('ese tipo de suscripcion no existe')
+}
+### 4. Crea una funcion que pueda recibir cualquier objeto como parametro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
 
-## Â¿CÃ³mo te fue? ðŸ†
+### ¿Como te fue? 
 
-**Â¡Felicidades por completar la prueba de JavaScript!** ConfÃ­o en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
+**¡Felicidades por completar la prueba de JavaScript!** Confi­o en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
 
-Ahora sÃ­, continÃºa a la siguiente clase, pero recuerda que **ya no puedes abandonar el curso**, debes completarlo hasta el final. No importa cuÃ¡nto tiempo te tome. **Yo sÃ© que tÃº puedes. Y tÃº deberÃ­as de saberlo tambiÃ©n.**
-
-Â¡Te espero en la siguiente clase para comenzar!
+Ahora sÃ­, continÃºa a la siguiente clase, pero recuerda que **ya no puedes abandonar el curso**, debes completarlo hasta el final. No importa cuÃ¡nto tiempo te tome. **Yo sÃ© que tÃº puedes. Y la deberias de saberlo tambien.**
+¡Te espero en la siguiente clase para comenzar!
 ### Variables
 ### Funciones
 ### Condicionales
@@ -228,6 +268,10 @@ Ahora sÃ­, continÃºa a la siguiente clase, pero recuerda que **ya no puedes 
 ### ¡Es tu turno: crea un tutorial!
 ## Manipulación del DOM
 ### Cómo conectar JavaScript con HTML
+
+
+
+
 ### Leyendo HTML desde JavaScript
 ### Escribiendo HTML desde JavaScript
 ### Eventos en JavaScript: interactuando con usuarios
