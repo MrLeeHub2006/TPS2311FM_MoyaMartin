@@ -8,5 +8,5 @@ const btn =document.querySelector('#btnCalcular');
 
 function btnOnClick(){
 console.log(input1.value + input2.value);
-
+parseInt(input1.value +  )
 }
