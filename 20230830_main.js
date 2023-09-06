@@ -1,16 +1,17 @@
-
-
-
 const h1=document.querySelector('h1');
-const input1 =document.querySelector('#Calculo1');
-const input2 =document.querySelector('#Calculo2');
-const btn =document.querySelector('#    ');
-const pResult =document.querySelector('#result');
+const formulario= document.querySelector('#tablita')
+const input1= document.querySelector('#calculo1');
+const input2= document.querySelector('#calculo2');
+const btn = document.querySelector('#btncalcular');
+const presult = document.querySelector('#result')
 
-btn.addEventListener('click', btnOnClick);
+formulario.addEventListener('submit', sumarinputvalues);
 
-function btnOnClick(){
 
-const sumaInputs = input1.value + input2.value;
-pResult.innerText = "Resultado: " + sumaInputs;
+function sumarinputvalues(event) {
+ console.log({event});
+ event.preventDefault()
+ const sumainputs = input1.value + input2.value;
+ presult.innerText = "resultado: " +sumainputs;
+
 }
