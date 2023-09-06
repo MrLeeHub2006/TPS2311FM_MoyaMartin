@@ -204,7 +204,7 @@ function imprimirPrimerElementoArray(arr) {
 ### 3 Crea una funcion que pueda recibir cualquier array como parÃ¡metro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 console.log (['juanita','Rigoberto', 'Natilla'].lenght)
 function imprimirElementoPorElemento(arr){
-    for (let i = 0; i < arr.lenght; i++) {
+    for (let i = 0; i < arr.length; i++) {
         Console.log(arr[i])
          ejercicio <
          const b = [1, 2,'Hola']
@@ -274,6 +274,9 @@ Ahora sÃ­, continÃºa a la siguiente clase, pero recuerda que **ya no puedes 
 
 ### Leyendo HTML desde JavaScript
 ### Escribiendo HTML desde JavaScript
+
+
+
 ### Eventos en JavaScript: interactuando con usuarios
 ### addEventListener
 ## Contribución a proyectos
