@@ -6,3 +6,7 @@ const input1 =document.querySelector('Calculo1');
 const input2 =document.querySelector('Calculo2');
 const btn =document.querySelector('#btnCalcular');
 
+function btnOnClick(){
+console.log('Escuchando el evento de click')
+
+}
