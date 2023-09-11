@@ -9,7 +9,7 @@ form.addEventListener('submit', sumarinputvalues);
 
 
 function sumarinputvalues(event) {
-// console.log({event});
+console.log({event});
  event.preventDefault();
  const sumainputs = input1.value + input2.value;
  presult.innerText = "resultado: " +sumainputs;
