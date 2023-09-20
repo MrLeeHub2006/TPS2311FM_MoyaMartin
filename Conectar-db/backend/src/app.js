@@ -9,7 +9,8 @@ app.get('/:name/:id', (req, res)=>{
     const{ name, id } = req.params
     res.send(`${name}: ${id}`);
 });
-
+// con get puedo mandar informacion mediante la url mediante el body no, 
+// no se puede usar informacion sensible
 app.post('/', (req, res)=>{
     const{email, password} = req.body;
     res.send(`${email}: ${password}`);
