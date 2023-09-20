@@ -8,8 +8,8 @@ app.get('/', (req, res)=>{
 
 app.post('/', (req, res)=>{
     res.send('Peticion POST');
-})
+});
 
 app.listen(3000, ()=>{
     console.log('servidor encendido');
-})  
+}) ; 
