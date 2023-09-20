@@ -29,7 +29,7 @@ app.delete('/', (req, res)=>{
 });
 // ==== db ===
 const connection = mysql2.createConnection({
-    host: 'LocalHost',
+    host: 'localhost',
     user: 'root',
     password: 'toor',
     databse: 'tutorial',
@@ -42,7 +42,7 @@ connection.connect((err)=>{
 
 const querySQL = 'SHOW TABLES;';
 
-connection.query(querySQL, (err,res)=>{
+connection.connect((err, res)=>{
     if (err) throw err;
     console.log('respuesta sql', res);
 });
