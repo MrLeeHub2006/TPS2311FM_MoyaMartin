@@ -1,9 +1,13 @@
 const express = require('express');
+const mysql2 = require('mysql2')
+
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+
+// ==== http ===
 
 app.get('/:name/:id', (req, res)=>{
     const{ name, id } = req.params
@@ -23,6 +27,26 @@ app.put('/', (req, res)=>{
 app.delete('/', (req, res)=>{
     res.send('Peticion DELETE');
 });
+// ==== db ===
+const connection = mysql2.createConnection({
+    host: 'LocalHost',
+    user: 'root',
+    password: 'toor',
+    databse: 'tutorial',
+});
+connection.connect((err)=>{
+    if (err) throw err;
+    console.log('BD conectada');
+
+});
+
+const querySQL = 'SHOW TABLES;';
+
+connection.query(querySQL, (err,res)=>{
+    if (err) throw err;
+    console.log('respuesta sql', res);
+});
+
 
 app.listen(3000, ()=>{
     console.log('servidor encendido');
