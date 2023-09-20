@@ -27,3 +27,4 @@ app.delete('/', (req, res)=>{
 app.listen(3000, ()=>{
     console.log('servidor encendido');
 }); 
+// para los demas metodos, pueden mediante el body y el url y se puede enviar informacion sensible desde la parte del body y el express
